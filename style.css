@@ -5,6 +5,10 @@ body {
     
 }
 
+main {
+text-align: center;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -49,6 +53,16 @@ body.dark-mode button{
     background: #ffffff;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: center;
+}
+
+#gameForm {
+    text-align: center;
+}
+
+.input-row{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .result-box {
@@ -111,12 +125,12 @@ button:hover {
 
 nav ul {
     list-style: none;
+    flex-direction: row;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 0;
-    margin: 0;
+    
 }
 
 nav li {
@@ -138,6 +152,10 @@ section{
     padding: 40px 0;
 }
 
+section h2 {
+    text-align: center;
+}
+
 
 /*Contact*/
 
@@ -147,4 +165,5 @@ section{
     gap: 10px;
     max-width: 400px;
     margin: 0 auto;
+    text-align: left;
 }
