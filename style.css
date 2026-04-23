@@ -30,3 +30,50 @@ body.dark-mode button{
     background: #494949;
     color: #f1f1f1;
 }
+
+/*Game*/
+
+.game-card {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.result-box {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f2f2f2;
+}
+
+.result-box p {
+    margin: 0;
+    font-weight: bold;
+}
+
+#playerGuess,
+#computerNumber {
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+.message {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/*Game Dark Mode*/
+
+body.dark-mode .game-card {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+body.dark-mode .result-box {
+    background: #2a2a2a;
+}
