@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Devyn's Final Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+
+    <header>
+        <h1>Robinson Final Project</h1>
+        <button id="themeToggle">Toggle Mode</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#game">Game</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="home">
+            <h2>Home</h2>
+            <p></p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p></p>
+        </section>
+
+        <section id="game">
+            <h2>Game</h2>
+            <p>Enter A Number 1 Through 10!</p>
+
+            <input type="number" id="guessInput" min="1" max="10">
+            <button id="guessBtn">Guess</button>
+
+            <p id="gameResult"></p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+        <form id="contactForm">
+
+          <label>Full Name:</label>
+          <input type="text" id="name">
+          <span class="error" id="nameError"></span>
+
+          <label>Email:</label>
+          <input type="text" id="email">
+          <span class="error" id="emailError"></span>
+
+          <label>Phone:</label>
+          <input type="text" id="phone">
+          <span class="error" id="phoneError"></span>
+
+          <label>Preferred Contact:</label>
+          <input type="radio" name="contactMethod" value="email"> Email
+          <input type="radio" name="contactMethod" value="phone"> Phone
+          <span class="error" id="contactError"></span>
+
+          <label>Comments:</label>
+          <textarea id="comments"></textarea>
+          <span class="error" id="commentsError"></span>
+
+          <button type="submit">Submit</button>
+        </form>
+
+            <p id="formMessage"></p>
+        </section>
+    </main>
+
+<footer> 
+    <p>&copy; 2026 My Company</p>
+</footer>
+
+</div>
+</body>
+
+
+</html>
