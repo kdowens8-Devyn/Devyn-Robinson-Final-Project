@@ -6,7 +6,7 @@ body {
 }
 
 main {
-text-align: center;
+text-align: left;
 }
 
 header {
@@ -14,12 +14,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .container {
     background: white;
     width: 1280px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 
@@ -150,6 +153,9 @@ nav a {
 
 section{
     padding: 40px 0;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 section h2 {
