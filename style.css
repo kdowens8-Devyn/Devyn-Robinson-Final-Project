@@ -2,4 +2,22 @@ body {
     width: 1280px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.container {
+    background: white;
+}
+
+
+/*Dark Mode*/
+
+body.dark-mode{
+    background: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-mode .container{
+    background: #1e1e1e;
+   
 }
