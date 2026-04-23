@@ -1,16 +1,16 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function (){
+
+    //Dark Mode
 const toggleBtn = document.getElementById("themeToggle");
 
     toggleBtn.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
     })
 
-});
 
-
-document.addEventListener("DOMContentLoaded", function() {
+    // Game
     const form = document.getElementById("gameForm");
     const guessInput = document.getElementById("guessInput");
 
