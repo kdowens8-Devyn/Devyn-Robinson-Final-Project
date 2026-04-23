@@ -26,48 +26,60 @@
     <main>
 
         <section id="home">
-            <h2>Home</h2>
-            <p></p>
+            <h2>Welcome Home</h2>
+            <p>Welcome to the home page!</p>
         </section>
 
         <section id="about">
             <h2>About</h2>
-            <p></p>
+            <p>Learn more about us! </p>
         </section>
 
         <section id="game">
-            <h2>Game</h2>
-            <p>Enter A Number 1 Through 10!</p>
+            <h2>Number Challenge</h2>
+            <p>Pick a number from 1 to 10 and see if you can match the system!</p>
 
-            <input type="number" id="guessInput" min="1" max="10">
-            <button id="guessBtn">Guess</button>
+            <form id="gameForm">
+                <label for="guessInput">Your Number:</label>
+                <input type="number" id="guessInput" min="1" max="10" required>
 
-            <p id="gameResult"></p>
-        </section>
+                <span class="error" id="guessError"></span>
+
+                <button type="submit">Test Your Luck!</button>
+            </form>
+
+            <div id="resultDisplay">
+                <p>Your Guess: <span id="playerGuess">-</span></p>
+                <p>Generated Number: <span id="computerNumber">-</span></p>
+                <p id="feedbackMessage"></p>
+            </div>
+            </section>
+
+       
 
         <section id="contact">
             <h2>Contact Us</h2>
 
         <form id="contactForm">
 
-          <label>Full Name:</label>
+          <label for="name">Full Name:</label>
           <input type="text" id="name">
           <span class="error" id="nameError"></span>
 
-          <label>Email:</label>
+          <label for="email">Email:</label>
           <input type="text" id="email">
           <span class="error" id="emailError"></span>
 
-          <label>Phone:</label>
+          <label for="phone">Phone:</label>
           <input type="text" id="phone">
           <span class="error" id="phoneError"></span>
 
           <label>Preferred Contact:</label>
-          <input type="radio" name="contactMethod" value="email"> Email
-          <input type="radio" name="contactMethod" value="phone"> Phone
+          <input type="radio" name="contactMethod" value="email" required> Email
+          <input type="radio" name="contactMethod" value="phone" required> Phone
           <span class="error" id="contactError"></span>
 
-          <label>Comments:</label>
+          <label for="comments">Comments:</label>
           <textarea id="comments"></textarea>
           <span class="error" id="commentsError"></span>
 
