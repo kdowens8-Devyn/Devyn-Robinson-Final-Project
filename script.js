@@ -19,12 +19,13 @@ const toggleBtn = document.getElementById("themeToggle");
     const feedbackMessage = document.getElementById("feedbackMessage");
     const guessError = document.getElementById("guessError");
 
+    console.log(form);
+
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 
         
         guessError.textContent = "";
-        feedbackMessage.textContent = "";
 
         let userGuess = Number(guessInput.value);
 
