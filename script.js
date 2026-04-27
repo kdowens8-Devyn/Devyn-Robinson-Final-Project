@@ -54,15 +54,9 @@ const toggleBtn = document.getElementById("themeToggle");
     });
 
 
+    // Form
 
-});
 
-
-// Form
-
-"use strict";
-
-document.addEventListener("DOMContentLoaded", function () {
 
     // get the form
     const form = document.getElementById("contactForm");
@@ -177,5 +171,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+
+
 });
+
+
+
+
 
